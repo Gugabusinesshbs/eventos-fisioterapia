@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Educacionais em Fisioterapia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('background-image.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+        }
+        .hero p {
+            font-size: 1.5em;
+        }
+        .hero a {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 50px 20px;
+        }
+        .event, .speaker, .testimonial {
+            margin-bottom: 30px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #4CAF50;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Eventos Educacionais em Fisioterapia</h1>
+        <p>Participe de nossas palestras e eventos para aprimorar seus conhecimentos</p>
+        <a href="#inscricao">Inscreva-se Agora</a>
+    </section>
+
+    <section class="container" id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma organização dedicada a promover eventos educacionais para estudantes de fisioterapia de todos os semestres. Nosso objetivo é fornecer conteúdo de qualidade através de palestras, workshops e eventos.</p>
+    </section>
+
+    <section class="container" id="eventos">
+        <h2>Próximos Eventos</h2>
+        <div class="event">
+            <h3>Workshop de Terapia Manual</h3>
+            <p>Data: 25 de Junho, Local: Auditório da Universidade X</p>
+            <a href="#inscricao">Inscreva-se</a>
+        </div>
+        <div class="event">
+            <h3>Palestra sobre Reabilitação Esportiva</h3>
+            <p>Data: 10 de Julho, Local: Auditório da Universidade Y</p>
+            <a href="#inscricao">Inscreva-se</a>
+        </div>
+    </section>
+
+    <section class="container" id="palestrantes">
+        <h2>Palestrantes</h2>
+        <div class="speaker">
+            <h3>Dr. João Silva</h3>
+            <p>Especialista em Fisioterapia Esportiva com mais de 20 anos de experiência.</p>
+        </div>
+        <div class="speaker">
+            <h3>Dra. Maria Fernandes</h3>
+            <p>Professora e pesquisadora na área de Terapia Manual.</p>
+        </div>
+    </section>
+
+    <section class="container" id="brindes-certificados">
+        <h2>Brindes e Certificados</h2>
+        <p>Todos os participantes receberão brindes exclusivos e um certificado de participação.</p>
+    </section>
+
+    <section class="container" id="inscricao">
+        <h2>Inscrição</h2>
+        <form action="process_inscription.php" method="post">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="telefone">Número de Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required><br>
+            <button type="submit">Comprar Ingresso</button>
+        </form>
+    </section>
+
+    <section class="container" id="depoimentos">
+        <h2>Depoimentos</h2>
+        <div class="testimonial">
+            <p>"Participar dos eventos foi uma experiência incrível, aprendi muito e conheci profissionais renomados da área."</p>
+            <p>- Ana Paula, Estudante de Fisioterapia</p>
+        </div>
+        <div class="testimonial">
+            <p>"Os workshops são muito bem organizados e oferecem um conteúdo de alta qualidade."</p>
+            <p>- Pedro Silva, Estudante de Fisioterapia</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Entre em contato conosco:</p>
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.instagram.com">Instagram</a>
+        <a href="https://www.twitter.com">Twitter</a>
+        <p>&copy; 2024 Eventos Educacionais em Fisioterapia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
